@@ -39,7 +39,7 @@ function MobileNav({ isMenuOpen, setIsMenuOpen }: MobileNavProps) {
         ))}
         <li>
           <a
-            href="https://github.com/vsbron/quikquiz-2026-nextjs"
+            href="https://github.com/vsbron/quikquiz__nextjs"
             onClick={() => setIsMenuOpen(false)}
             target="_blank"
             className="flex items-center gap-2 hover:gap-4 transition-all"

@@ -13,7 +13,7 @@ function Footer() {
         <div className="text-[15px] max-lg:text-center">
           Built by VSBroN as a{" "}
           <a
-            href="https://github.com/vsbron/quikquiz-2026-nextjs"
+            href="https://github.com/vsbron/quikquiz__nextjs"
             target="_blank"
             className="underline"
           >

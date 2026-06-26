@@ -4,4 +4,4 @@ Allow: /
 Disallow: /results/
 Disallow: /api/
 
-Sitemap: https://https://vsbron-quikquiz-2026.vercel.app/sitemap.xml
+Sitemap: https://quikquiz.vercel.app/sitemap.xml
