@@ -7,7 +7,7 @@ import { getMultiplier, shuffleAnswers } from "@/utils/helpers";
 
 // Props interface
 interface QuestionsDisplayProps {
-  questions: Question[];
+  questions: PublicQuestion[];
   difficulty: Difficulty;
   category: string;
 }

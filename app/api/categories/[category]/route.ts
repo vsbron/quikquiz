@@ -17,6 +17,17 @@ export async function GET(
     return NextResponse.json({ error: "Category not found" }, { status: 404 });
   }
 
+  // Strip correctAnswer from every question before sending to the client
+  const publicPack: PublicQuestionsPack = {
+    ...questionsPack,
+    difficulties: Object.fromEntries(
+      Object.entries(questionsPack.difficulties).map(([level, questions]) => [
+        level,
+        questions.map(({ correctAnswer: _correctAnswer, ...rest }) => rest),
+      ]),
+    ) as Record<Difficulty, PublicQuestion[]>,
+  };
+
   // Return the response
-  return NextResponse.json(questionsPack);
+  return NextResponse.json(publicPack);
 }

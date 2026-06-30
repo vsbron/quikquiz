@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 
 // Props interface
 interface QuestionCardProps {
-  curQuestion: Question;
+  curQuestion: PublicQuestion;
   index: number;
   submitHandler: (answer: string) => void;
   disableButtons: boolean;

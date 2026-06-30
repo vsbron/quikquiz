@@ -39,7 +39,7 @@ export const getCategoryData = cache(async (category: string) => {
   if (!res.ok) return null;
 
   // Convert response to categories
-  const categories = (await res.json()) as QuestionsPack;
+  const categories = (await res.json()) as PublicQuestionsPack;
 
   // Return question pack
   return categories;

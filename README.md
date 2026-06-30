@@ -66,6 +66,7 @@ The project includes dynamic routing, API-driven quiz loading, server-side resul
 
 - 🔌 **API-powered quiz loading**
   - quizzes are fetched through a GET API endpoint
+  - correct answers are never exposed to the client - validation happens server-side only
 - 🧮 **Server-side result calculation**
   - answers are sent via POST request
   - score and incorrect questions are calculated server-side
@@ -134,7 +135,7 @@ The project includes dynamic routing, API-driven quiz loading, server-side resul
 `GET /api/categories/[category]`
 
 - Finds the category pack by `slug`
-- Returns the category object with title + difficulties + questions
+- Returns the category object with title + difficulties + questions (correct answers stripped out)
 - Returns 404 if the category does not exist
 
 ---

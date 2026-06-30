@@ -5,7 +5,7 @@ import QuestionsDisplay from "@/components/QuestionsDisplay";
 import Button from "@/components/ui/Button";
 import SectionTitle from "@/components/ui/SectionTitle";
 
-function QuizSection({ questions }: { questions: QuestionsPack }) {
+function QuizSection({ questions }: { questions: PublicQuestionsPack }) {
   // Create state value for Difficulty
   const [difficulty, setDifficulty] = useState<Difficulty | null>(null);
 

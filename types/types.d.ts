@@ -7,6 +7,10 @@ type QuestionsPack = {
   difficulties: Record<Difficulty, Question[]>;
 };
 
+type PublicQuestionsPack = Omit<QuestionsPack, "difficulties"> & {
+  difficulties: Record<Difficulty, PublicQuestion[]>;
+};
+
 type Question = {
   id: number;
   question: string;
@@ -14,6 +18,8 @@ type Question = {
   image?: string;
   correctAnswer: string;
 };
+
+type PublicQuestion = Omit<Question, "correctAnswer">;
 
 type QuizResults = {
   quizName: string;
