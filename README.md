@@ -70,7 +70,7 @@ The project includes dynamic routing, API-driven quiz loading, server-side resul
 - 🧮 **Server-side result calculation**
   - answers are sent via POST request
   - score and incorrect questions are calculated server-side
-- 💾 **Session-based flow protection**
+- 💾 **Session-based navigation guard**
   - results are stored in `sessionStorage`
   - results page reads data and clears it
   - results page checks for `sessionStorage` data and redirects if missing
