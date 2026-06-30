@@ -16,7 +16,7 @@ function LogoTab() {
         <Image
           src="/logo.svg"
           width={75}
-          height={40}
+          height={41}
           alt={`${APP_NAME} Logo`}
         />
       </Link>

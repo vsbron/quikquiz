@@ -16,6 +16,7 @@ function HeroSection() {
             fill
             className="object-contain"
             alt={`${APP_NAME} Logo`}
+            priority
           />
         </div>
         <SectionTitle className="mb-0! text-[32px] sm:text-[40px]! md:text-[50px]!">
