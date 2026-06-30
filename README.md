@@ -3,7 +3,7 @@
 QuikQuiz is a lightweight, interactive quiz app built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**.  
 Users can browse quiz categories, choose a difficulty level, answer 10 multiple-choice questions, and instantly view their results — including a visual correct vs wrong breakdown using **Chart.js**.
 
-The app is designed as a clean portfolio project with a real-world structure: quiz data is served via **Next.js API routes**, results are calculated through a dedicated API endpoint, and the quiz flow is protected using **sessionStorage** to prevent invalid navigation (like opening results without finishing a quiz).
+The app is designed as a clean portfolio project with a real-world structure: quiz data is served via **Next.js API routes**, results are calculated through a dedicated API endpoint, and the quiz flow uses **sessionStorage** to guide normal navigation (e.g. redirecting users who land on the results page without completing a quiz first).
 
 ---
 
@@ -72,7 +72,8 @@ The project includes dynamic routing, API-driven quiz loading, server-side resul
 - 💾 **Session-based flow protection**
   - results are stored in `sessionStorage`
   - results page reads data and clears it
-  - prevents opening results without completing the quiz
+  - results page checks for `sessionStorage` data and redirects if missing
+  - prevents accidental/direct access to the results URL during normal use
 
 ---
 
